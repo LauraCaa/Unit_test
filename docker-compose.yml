@@ -5,8 +5,8 @@ services:
       - "3000:3000"
     volumes:
       - ".:/opt/unit_test"
-    #   - "/opt/unit_test/node_modules"
-    # environment:
-    #   - NEXT_WEBPACK_USEPOLLING=true
-    #   - CHOKIDAR_USEPOLLING=true
-    #   - WATCHPACK_POLLING=true
+      - "/opt/unit_test/node_modules"
+    environment:
+      - NEXT_WEBPACK_USEPOLLING=true
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
